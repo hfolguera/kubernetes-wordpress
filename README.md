@@ -27,3 +27,14 @@ sudo chown 999:999 /volume2/k8s/wordpress-mysql-pv-claim-pvc*
 ```
 kubectl apply -f wordpress-deployment.yaml
 ```
+
+# GitOps
+You can also deploy a Wordpress instance through an ArgoCD application.
+Use the example in: https://github.com/hfolguera/kubernetes-argocd/blob/main/applications/wordpress-application.yaml
+
+Clone or download the repo, update and deploy it:
+```
+wget https://raw.githubusercontent.com/hfolguera/kubernetes-argocd/main/applications/wordpress-application.yaml
+vim wordpress-application.yaml
+kubectl apply -f wordpress-application.yaml
+```
