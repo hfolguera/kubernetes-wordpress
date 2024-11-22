@@ -31,3 +31,7 @@ wget https://raw.githubusercontent.com/hfolguera/kubernetes-argocd/main/applicat
 vim wordpress-application.yaml
 kubectl apply -f wordpress-application.yaml
 ```
+
+# Plugins
+After deploying Wordpress, manually install and activate the following plugins:
+- Backup plugin (UpdraftPlus?)
